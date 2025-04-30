@@ -1,0 +1,12 @@
+[submodule "submodules/SoapySDR"]
+	path = submodules/SoapySDR
+	url = https://github.com/ramosaurio/SoapySDR.git
+[submodule "submodules/LimeSuite"]
+	path = submodules/LimeSuite
+	url = https://github.com/ramosaurio/LimeSuite.git
+[submodule "submodules/srsGUI"]
+	path = submodules/srsGUI
+	url = https://github.com/ramosaurio/srsGUI.git
+[submodule "submodules/srsRAN_4G"]
+	path = submodules/srsRAN_4G
+	url = https://github.com/ramosaurio/srsRAN_4G.git
