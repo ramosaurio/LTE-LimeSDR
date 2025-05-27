@@ -50,7 +50,7 @@ This setup is intended to run on modest hardware with the following recommended 
 
 ```bash
   git clone --recurse-submodules https://github.com/ramosaurio/lte-minimal-srsran.git
-cd lte-minimal-srsran
+cd LTE-LimeSDR/
 ```
 
 > 📦 All required components (SoapySDR, LimeSuite, srsRAN, etc.) are already included as Git submodules under the `submodules/` directory. No need to clone them manually.
@@ -63,7 +63,7 @@ export SRSRAN_INSTALL=$HOME/ran-lte
 mkdir -p "$SRSRAN_INSTALL"
 export LD_LIBRARY_PATH=${SRSRAN_INSTALL}/lib
 export PATH=${SRSRAN_INSTALL}/bin:$PATH```
-
+```
 ---
 
 ### 3. Build SoapySDR (from submodule)
