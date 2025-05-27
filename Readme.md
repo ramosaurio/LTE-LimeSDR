@@ -118,7 +118,7 @@ LimeUtil --update
 
 ---
 
-### 4. Build srsRAN (from submodule)
+### 5. Build srsRAN (from submodule)
 
 ```bash
 sudo apt-get install build-essential cmake libfftw3-dev libmbedtls-dev libboost-program-options-dev libconfig++-dev libsctp-dev
