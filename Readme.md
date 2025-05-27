@@ -240,7 +240,7 @@ In two separate terminal windows:
 ### 1. Set up the environment variable
 
 ```bash
-export SRSRAN_INSTALL=$HOME/ran-lte
+export SRSRAN_INSTALL=/home/rmoreno/ran-lte
 ```
 
 ---
