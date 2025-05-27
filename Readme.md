@@ -116,6 +116,23 @@ LimeSuiteGUI
 LimeUtil --update
 ```
 
+---
+
+### 4. Build srsRAN (from submodule)
+
+```bash
+sudo apt-get install build-essential cmake libfftw3-dev libmbedtls-dev libboost-program-options-dev libconfig++-dev libsctp-dev
+sudo apt-get install pkg-config
+cd submodules/srsRAN_4G
+mkdir build && cd build
+cmake -DCMAKE_PREFIX_PATH=${SRSRAN_INSTALL} -DCMAKE_INSTALL_PREFIX=${SRSRAN_INSTALL} -DUSE_LTE_RATES=ON ..
+make -j`nproc`
+make test
+make install
+./srsran_install_configs.sh user
+```
+
+
 ## ⚙️ Configuration Overview
 
 After building and installing srsRAN, the configuration files are placed in `~/.config/srsran/` by running the script `srsran_install_configs.sh`.
