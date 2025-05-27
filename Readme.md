@@ -249,7 +249,7 @@ export SRSRAN_INSTALL=/home/rmoreno/ran-lte
 
 ```bash
 LD_LIBRARY_PATH=${SRSRAN_INSTALL}/lib \
-sh -c "cd ~/.config/srsran && ${SRSRAN_INSTALL}/bin/srsepc epc.conf"
+sh -c "cd /home/rmoreno/.config/srsran && ${SRSRAN_INSTALL}/bin/srsepc epc.conf"
 ```
 
 You should see logs confirming the initialization of HSS, MME, SPGW, and the configured MCC/MNC.
@@ -261,8 +261,8 @@ You should see logs confirming the initialization of HSS, MME, SPGW, and the con
 ```bash
 echo "performance" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 
-LD_LIBRARY_PATH=${SRSRAN_INSTALL}/lib \
-sh -c "cd ~/.config/srsran && ${SRSRAN_INSTALL}/bin/srsenb enb.conf"
+sudo LD_LIBRARY_PATH=${SRSRAN_INSTALL}/lib \
+sh -c "cd /home/rmoreno/.config/srsran && ${SRSRAN_INSTALL}/bin/srsenb enb.conf"
 ```
 
 Watch for messages indicating the SDR has been correctly detected and calibrated, and that the eNodeB has started.
