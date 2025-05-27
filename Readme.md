@@ -248,7 +248,7 @@ export SRSRAN_INSTALL=/home/rmoreno/ran-lte
 ### 2. Start the EPC (Core Network)
 
 ```bash
-LD_LIBRARY_PATH=${SRSRAN_INSTALL}/lib \
+sudo LD_LIBRARY_PATH=${SRSRAN_INSTALL}/lib \
 sh -c "cd /home/rmoreno/.config/srsran && ${SRSRAN_INSTALL}/bin/srsepc epc.conf"
 ```
 
