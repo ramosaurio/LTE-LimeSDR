@@ -49,7 +49,7 @@ This setup is intended to run on modest hardware with the following recommended 
 ### 1. Clone with submodules
 
 ```bash
-  git clone --recurse-submodules https://github.com/tuusuario/lte-minimal-srsran.git
+  git clone --recurse-submodules https://github.com/ramosaurio/lte-minimal-srsran.git
 cd lte-minimal-srsran
 ```
 
@@ -366,7 +366,7 @@ The design and deployment of this LTE setup are based on the following sources a
       Used to load and manage JavaCard applets in programmable SIM cards.
 
 - **sim-tools (forked and modified)**:
-    - [https://github.com/tuusuario/sim-tools](https://github.com/tuusuario/sim-tools) *(private fork)*  
+    - [https://github.com/ramosaurio/sim-tools](https://github.com/ramosaurio/sim-tools) *(private fork)*  
       A set of Python-based utilities to install and interact with JavaCard applets on programmable SIMs.
 
 - **Open5GS Project** (referenced but not used in this repo):
