@@ -59,8 +59,10 @@ cd lte-minimal-srsran
 ### 2. Set the installation directory
 
 ```bash
-export SRSRAN_INSTALL=${HOME}/lte-simple
-```
+export SRSRAN_INSTALL=$HOME/ran-lte
+mkdir -p "$SRSRAN_INSTALL"
+export LD_LIBRARY_PATH=${SRSRAN_INSTALL}/lib
+export PATH=${SRSRAN_INSTALL}/bin:$PATH```
 
 ---
 
@@ -144,7 +146,7 @@ In the `[enb]` section, configure the **MCC** and **MNC** to match your SIM card
 [enb]
 enb_id = 0x19B
 mcc = 999
-mnc = 69
+mnc = 70
 ```
 
 In the `[rf]` section, specify the SDR device and its parameters:
@@ -192,7 +194,7 @@ mme_code = 0x1a
 mme_group = 0x0001
 tac = 0x0007
 mcc = 999
-mnc = 69
+mnc = 70
 ```
 
 ---
@@ -203,7 +205,7 @@ This file defines the UEs (SIM cards) recognized by the HSS. You'll need to incl
 
 ```csv
 # Name,Auth,IMSI,Key,OP_Type,OP/OPc,AMF,SQN,QCI,IP_alloc
-ue1,mil,999690000000001,895fd70bd46fa42435ba1471665b0028,opc,9b9fb8dcae42ae23011abc20bb80796a,8000,000000000000,7,dynamic
+ue1,mil,999700000131761,D387462154B78C44083E6CFC9110B081,opc,F1A54F0F0B2D5E2CA966D4EBA65250B0,8000,000000000000,7,dynamic
 ```
 
 - `Auth`: Use `mil` for MILENAGE algorithm
