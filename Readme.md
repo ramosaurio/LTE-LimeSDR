@@ -248,7 +248,7 @@ export SRSRAN_INSTALL=/home/rmoreno/ran-lte
 ### 2. Start the EPC (Core Network)
 
 ```bash
-sudo LD_LIBRARY_PATH=${SRSRAN_INSTALL}/lib \
+LD_LIBRARY_PATH=${SRSRAN_INSTALL}/lib \
 sh -c "cd ~/.config/srsran && ${SRSRAN_INSTALL}/bin/srsepc epc.conf"
 ```
 
@@ -261,7 +261,7 @@ You should see logs confirming the initialization of HSS, MME, SPGW, and the con
 ```bash
 echo "performance" | sudo tee /sys/devices/system/cpu/cpu*/cpufreq/scaling_governor
 
-sudo LD_LIBRARY_PATH=${SRSRAN_INSTALL}/lib \
+LD_LIBRARY_PATH=${SRSRAN_INSTALL}/lib \
 sh -c "cd ~/.config/srsran && ${SRSRAN_INSTALL}/bin/srsenb enb.conf"
 ```
 
