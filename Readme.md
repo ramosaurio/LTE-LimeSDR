@@ -62,7 +62,7 @@ cd LTE-LimeSDR/
 export SRSRAN_INSTALL=$HOME/ran-lte
 mkdir -p "$SRSRAN_INSTALL"
 export LD_LIBRARY_PATH=${SRSRAN_INSTALL}/lib
-export PATH=${SRSRAN_INSTALL}/bin:$PATH```
+export PATH=${SRSRAN_INSTALL}/bin:$PATH
 ```
 ---
 
